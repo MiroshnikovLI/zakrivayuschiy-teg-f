@@ -6,7 +6,7 @@
 */
 
 :root.theme-dark {
-
+  
   /* like icon color */
 
   --fill-active: #00cc14;
@@ -33,7 +33,7 @@
   --bg-header: #000;
   --line-global-color: #000000;
   --gradient-color-1: #007f0c;
-  --gradient-color-2: #007f0c;
+  --gradient-color-2: #004306;
 
   /* color shadow */
 

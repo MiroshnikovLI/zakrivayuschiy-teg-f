@@ -27,7 +27,7 @@ html {
   align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: sans-serif;
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-feature-settings: 'wght' 465;
   background-image: repeating-linear-gradient(
@@ -104,7 +104,7 @@ html {
   background-color: var(--bg-header, #000);
 }
 
-.header__title {
+.header__decor {
   margin-block-end: 18px;
   font-family: inherit;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -112,7 +112,7 @@ html {
   text-transform: uppercase;
 }
 
-.header__text {
+.header__title {
   margin-block-end: 25px;
   font-size: clamp(0.875rem, 0.6768rem + 0.8459vw, 1.4375rem);
   font-weight: 400;
@@ -141,8 +141,9 @@ html {
   &:focus-visible::after {
     content: '';
     position: absolute;
-    inset: 0;
+    right: 4px;
     bottom: -3px;
+    left: 4px;
     border-block-end: 1px solid var(--global-bd-color, #00cc14);
     animation: scaleX 0.3s ease-in;
     transform-origin: 0 0;
@@ -201,7 +202,7 @@ html {
 
 .card__img {
   position: relative;
-  block-size: clamp(23.4375rem, 16.3666rem + 30.1692vw, 43.5rem);
+  block-size: clamp(23.25rem, 16.113rem + 30.4511vw, 43.5rem);
 }
 
 .img-filter-sapia {
@@ -449,6 +450,7 @@ html {
 
 .floppy {
   display: flex;
+  align-items: center;
   flex-wrap: nowrap;
   gap: 20px;
 }
@@ -459,10 +461,52 @@ html {
   font-size: var(--s-font-size, 14px);
   font-weight: 400;
   line-height: var(--ssm-line-height, 21px);
+  text-transform: uppercase;
 }
 
 .button__text--seve-mode {
   margin-block-start: 30px;
   padding: 10px clamp(7.03125rem, 6.6348rem + 1.6917vw, 8.15625rem);
   border: 2px solid var(--global-bd-color, #00cc14);
+}
+
+.icon-floppy {
+  max-width: 21px;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  
+  .header__title {
+    margin-block-end: 17px;
+  }
+
+  .card {
+    padding-block-end: 13px;
+  }
+
+  .card__title {
+    padding-block: 5px36px;
+  }
+
+  .card__text {
+    padding-inline-end: 30px;
+  }
+
+  .label {
+    top: 23px;
+    right: 11px;
+  }
+
+  .button-seve {
+    flex-direction: column;
+    padding-inline: 19.5px 20.5px;
+    padding-block: 15px;
+  }
+
+  .icon-floppy {
+    max-width: 28px;
+    height: auto;
+  }
+
 }

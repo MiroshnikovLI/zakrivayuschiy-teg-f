@@ -27,7 +27,7 @@
   --bg-header: #000;
   --line-global-color: #000;
   --gradient-color-1: #007f0c;
-  --gradient-color-2: #007f0c;
+  --gradient-color-2: #004306;
 
   /* color shadow */
 
@@ -40,7 +40,7 @@
 
   /* font family */
 
-  --feature-font-family: 'Inter-Variable';
+  --feature-font-family: 'Inter-Variable'; 
   --global-font-family: 'PressStart2P';
 
   /* font-feature-settings */
